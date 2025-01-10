@@ -1,3 +1,4 @@
+/* Styles for Mobile devices */
 .hero-info {
   display: flex;
   align-items: flex-start;
@@ -13,7 +14,7 @@
   letter-spacing: -0.02em;
 }
 
-.highlight {
+.hero-highlight {
   color: #3350e9;
 }
 
