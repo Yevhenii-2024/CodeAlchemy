@@ -100,6 +100,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .contactus-container {
+    max-width: 768px;
+  }
   .contactus-title {
     font-size: 48px;
     margin-bottom: 40px;
@@ -148,7 +151,10 @@
   .contactus-container {
     display: flex;
     align-items: center;
+    max-width: 1150px;
+    margin-bottom: 100px;
   }
+
   .contactus-form {
     margin: 0;
     margin-right: 40px;
