@@ -1,3 +1,6 @@
+.page-reviews {
+  padding-bottom: 60px;
+}
 .title-page-reviews {
   font-weight: 600;
   font-size: 32px;
@@ -40,6 +43,9 @@
   color: rgba(12, 12, 12, 0.4);
 }
 @media screen and (min-width: 768px) {
+  .page-reviews {
+    padding-bottom: 80px;
+  }
   .title-page-reviews {
     font-size: 48px;
     line-height: 0, 92;
@@ -63,5 +69,17 @@
   .review-list-item-text {
     font-size: 16px;
     line-height: 1.25;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .page-reviews {
+    padding-bottom: 100px;
+  }
+  .reviews-list {
+    gap: 20px;
+  }
+  .review-list-item {
+    display: flex;
+    flex-basis: calc((100% - 40px) / 3);
   }
 }
