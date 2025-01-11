@@ -6,11 +6,11 @@
   margin-bottom: 24px;
 }
 .review-list-item {
-  flex-basis: 100%;
+  flex-basis: (100% / 1);
   display: none;
 }
-.review-list-item:nth-child(1) {
-  display: block;
+.visible-mobile {
+  display: flex;
 }
 .cont-list-item {
   display: flex;
@@ -47,9 +47,13 @@
   }
   .reviews-list {
     gap: 16px;
-  }
-  .review-list-item:nth-child(-n + 2) {
     display: flex;
+    flex-direction: row;
+  }
+  .visible-tablet {
+    display: block;
+  }
+  .review-list-item {
     flex-basis: calc((100% - 16px) / 2);
   }
   .review-list-item-title {
