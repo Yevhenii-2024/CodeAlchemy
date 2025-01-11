@@ -5,11 +5,14 @@
   letter-spacing: -0.02em;
   margin-bottom: 24px;
 }
-.cont-list-item {
+.reviews-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+}
+.review-list-item {
+  flex-basis: calc(100% / 1);
+}
+.cont-list-item {
   background-color: #f3f3f3;
   padding: 32px 36px;
   border-radius: 30px;
