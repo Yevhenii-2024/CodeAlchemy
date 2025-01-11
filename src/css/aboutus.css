@@ -1,48 +1,56 @@
+:root {
+	--main: #0C0C0C;
+}
+
 .about-us-section {
-    width: 1280px;
-    gap: 50px;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
+    justify-content: center;
     gap: 40px;
+
+    color: var(--main);
+    /* font-family: var(--font-family); */
+}
+
+.about-us-container {
+    box-sizing: border-box;
+    height: 532px;
+    border-radius: 50px;
 }
 
 .about-us-content-container {
+    padding: 60px;
     width: 580px;
-    height: 532px;
     background-color: #F3F3F3;
-    border-radius: 50px;
-
 
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     gap: 40px;
-
-    padding: 60px;
 }
 
 .about-us-title {
     font-weight: 600;
     font-size: 48px;
     width: 100%;
-    /* padding-left: 120px; */
 
-   
     line-height: 92%;
     letter-spacing: -0.02em;
-    color: #0C0C0C;
 }
 
 .about-us-description {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    font-weight: 500;
+    font-size: 16px;
+
+    line-height: 125%;
+    letter-spacing: -0.02em;
 }
 
-.catalog-button {
+.about-us-catalog-button {
     width: 160px;
     height: 48px;
     border-radius: 16px;
@@ -53,14 +61,64 @@
     font-weight: 500;
     font-size: 14px;
     
-    /* line-height: 18px;  */
     line-height: 129%;
     text-align: center;
     color: #FBFBFB;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.catalog-button:hover,
-.catalog-button:focus {
+.about-us-catalog-button:hover,
+.about-us-catalog-button:focus {
     background-color: #1F3CD4;
 }
+
+.about-us-image-container {
+    width: 530px;
+    min-height: 446px;
+    background-color: #3350E9;
+}
+
+@media screen and (max-width: 875px) {
+    .about-us-section {
+        flex-direction: column;
+    }
+
+    .about-us-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .about-us-container {
+        height: 100%;
+        border-radius: 30px;
+    }
+
+    .about-us-content-container {
+        padding: 20px;
+        gap: 35px;
+    }
+
+    .about-us-title {
+        font-size: 32px;
+        width: 100%;
+        line-height: 100%;
+    }
+
+    .about-us-description {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-height: 465px) {
+    .about-us-container {
+        max-height: 100vh;
+        min-height: 100vh;
+    }
+
+    .about-us-content-container {
+        padding: 20px;
+        gap: 35px;
+    }
+}
+
