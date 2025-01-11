@@ -1,36 +1,19 @@
 /* section catalog */
 .catalog-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 24px;
-  padding: 0px 20px;
-  width: 375px;
-  /* height: 1660px; */
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 @media only screen and (min-width: 768px) {
   .catalog-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 40px;
-    width: 704px;
-    /* height: 1390px; */
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .catalog-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 40px;
-    padding: 0px 65px;
-    width: 1200px;
-    /* height: 944px; */
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
@@ -39,37 +22,42 @@
   font-size: 32px;
   line-height: 1;
   letter-spacing: -0.02em;
-  color: #0c0c0c;
-  text-align: left;
   margin-bottom: 24px;
 }
 @media only screen and (min-width: 768px) {
   .catalog-title {
     font-weight: 600;
     font-size: 48px;
-    line-height: 0.91667;
+    line-height: 92%;
     letter-spacing: -0.02em;
-    color: #0c0c0c;
-    text-align: left;
     margin-bottom: 40px;
   }
 }
 .catalog-list {
-  gap: 24x 20px;
+  display: flex;
+  text-decoration: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 @media only screen and (min-width: 768px) {
   .catalog-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32x 16px;
+    gap: 29px 16px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .catalog-list {
-    row-gap: 48px;
-    gap: 32x 23px;
+    gap: 26px 23px;
+  }
+}
+ul.catalog-list li:nth-child(n + 5) {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  ul.catalog-list li:nth-child(n + 5) {
+    display: unset;
   }
 }
 
@@ -83,40 +71,51 @@
   }
 }
 .catalog-item {
-  background: #fff;
-  max-width: 288px;
-  margin: 0 auto;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  background-color: #f3f3f3;
+  border-radius: 30px;
+  padding: 24px 28px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
   .catalog-item {
-    width: calc((100% - 1 * 24px) / 2);
+    width: calc((100% - 16px) / 2);
+    padding: 24px 32px;
   }
-  .catalog-item:not(:last-child) {
-    margin-bottom: 0;
+}
+@media screen and (min-width: 1280px) {
+  .catalog-item {
+    width: calc((100% - 23px * 2) / 3);
+    padding: 24px 32px;
+  }
+}
+.catalog-img {
+  margin: 18px auto 28px;
+  display: flex;
+  justify-content: center;
+  width: 208px;
+  height: 226px;
+}
+@media screen and (min-width: 768px) {
+  .catalog-img {
+    margin: 10px auto 20px;
+    width: 268px;
+    height: 292px;
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .catalog-item {
-    width: calc((100% - 48px) / 3);
-    cursor: pointer;
-    overflow: hidden;
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 1280px) {
+  .catalog-img {
+    width: 292px;
+    height: 292px;
   }
 }
 .catalog-wrapper {
   position: relative;
   overflow: hidden;
 }
-
-/* .catalog-img {
-  width: 100%;
-  height: auto;
-} */
 
 .catalog-container {
   padding: 32px 16px;
@@ -131,6 +130,7 @@
   line-height: 1.25;
   letter-spacing: -0.02em;
 }
+
 @media only screen and (min-width: 768px) {
   .catalog-title-text {
     font-size: 20px;
@@ -146,26 +146,31 @@
   color: rgba(12, 12, 12, 0.5);
 }
 
-.catalog-show-more-btn {
-  border: none;
+.catalog-btn {
+  display: block;
+  border-radius: 16px;
+  border: 0;
   width: 160px;
   height: 48px;
+  margin: 0 auto;
+  background-color: #3350e9;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.28571;
+  line-height: 129%;
   text-align: center;
   color: #fbfbfb;
-  border-radius: 16px;
-  margin: 0 auto;
-  background: #3350e9;
+  cursor: pointer;
+  margin-top: 40px;
 }
 
-/* Ефект при наведенні */
-.catalog-show-more-btn:hover {
-  background-color: #2563eb; /* Трохи темніший синій */
+.catalog-btn:hover,
+.catalog-btn:focus {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #1f3cd4;
 }
-@media (min-width: 768px) {
-  .catalog-show-more-btn {
+
+@media screen and (min-width: 768px) {
+  .catalog-btn {
     display: none;
   }
 }
