@@ -5,7 +5,7 @@
 }
 
 .advertisement-div{
-    background-image: url(#);
+    background: url();
     display: flex;
     flex-direction: column;
     justify-content: center;
