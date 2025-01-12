@@ -1,5 +1,9 @@
 /*MOBIL*/
 
+.advertisement-section{
+    padding-bottom: 100px;
+}
+
 .advertisement-div{
     display: flex;
     flex-direction: column;
