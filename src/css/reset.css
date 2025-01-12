@@ -64,7 +64,7 @@ body {
   }
 }
 /* Styles for Desktop devices */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .container {
     max-width: 1200px;
     padding: 0 65px;
