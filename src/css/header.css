@@ -38,6 +38,11 @@ color: #0c0c0c;
     align-items: center;
     justify-content: center;
 }
+@media screen and (min-resolution: 192dpi) {
+    .mob_menu {
+        background-image: url(../images/menu/menu_mobile_2x.webp);
+    }
+}
 .mob_menu.is_open {
     transform: translateX(0);
 }
@@ -53,8 +58,12 @@ color: #0c0c0c;
     border: none;
     background: transparent;
     padding: 0;
+    width: 34px;
+    height: 34px;
 }
 .mob_menu_icon {
+    width: 34px;
+    height: 34px;
     display: block;
     stroke: #0c0c0c;
 }
@@ -63,11 +72,15 @@ color: #0c0c0c;
     position: absolute;
     top: 20px;
     right: 20px;
+    width: 34px;
+    height: 34px;
     border: none;
     background: transparent;
     padding: 0;
 }
 .mob_close_icon {
+    width: 34px;
+    height: 34px;
     display: block;
     stroke: #fbfbfb;
 }
@@ -106,6 +119,65 @@ padding: 8px;
 /* height: 34px; */
 }
 .mob-soc-icon {
+    width: 18px;
+    height: 18px;
     display: block;
     fill: #fbfbfb;
+}
+@media screen and (min-width: 768px) {
+    .header {
+        height: 92px;
+    }
+    .head_cont {
+        padding: 26px 32px;
+    }
+    .logotype {
+        font-size: 20px;
+        }
+    .mob_menu_btn {
+        width: 40px;
+        height: 40px;
+    }
+    .mob_menu_icon {
+        width: 40px;
+        height: 40px;
+    }
+    .mob_menu_cont {
+        padding-top: 310px;
+    }
+    .mob_menu {
+        background-image: url(../images/menu/menu_tablet.webp);
+        width: 330px;
+    }
+    .mob_menu_close {
+        top: 26px;
+        right: 32px;
+        width: 40px;
+        height: 40px;
+    }
+     .mob_close_icon {
+        width: 40px;
+        height: 40px;
+    }
+    .mob-nav-list {
+        margin-bottom: 350px;
+        margin-left: 128px;
+        margin-right: auto;
+        gap: 32px;
+    }
+    .mob-social-list {
+        width: 128px;
+    }
+    /* .mob-soc-item {
+    } */
+    .mob-soc-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+}
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .mob_menu {
+        background-image: url(../images/menu/menu_tablet_2x.webp);
+    }
 }
