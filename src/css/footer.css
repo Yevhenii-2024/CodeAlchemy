@@ -101,8 +101,13 @@
 
 .icon-footer {
     fill: #fbfbfb;
+    opacity: 80%;
 }
 
+.icon-footer:hover,
+.icon-footer:focus {
+    opacity: unset;
+}
 
 .footer-phone {
     display: flex;
