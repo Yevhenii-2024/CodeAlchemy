@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
-      integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Premium Watches</title>
-    <script type="module" crossorigin src="/CodeAlchemy/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/CodeAlchemy/assets/index-4VlbiRjt.css">
-  </head>
-  <body>
-    <header class="header">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
+    integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Premium Watches</title>
+  <script type="module" crossorigin src="/CodeAlchemy/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/CodeAlchemy/assets/index-4FoiGLsM.css">
+</head>
+
+<body>
+  <header class="header">
   <div class="container head_cont">
     <!-- <div class="header_cont"> -->
     <nav class="header_nav">
@@ -112,18 +110,18 @@
 </header>
 
 
-    <main>
-      <!-- Loads the specified .html file -->
-      
+  <main>
+    <!-- Loads the specified .html file -->
+    
 
-      
+    
 
-      <section class="vite-promo">
+    <section class="vite-promo">
   <div class="container"></div>
 </section>
 
-      
-      <section id="sale" class="sale">
+    
+    <section id="sale" class="sale">
   <div class="container">
     <h2 class="sale-title-section">Sale</h2>
     <div class="sale-section">
@@ -252,7 +250,7 @@
   </div>
 </section>
 
-      <section class="page-reviews">
+    <section class="page-reviews">
   <div class="container">
     <h3 class="title-page-reviews">Reviews</h3>
     <ul class="reviews-list">
@@ -308,13 +306,94 @@
   </div>
 </section>
 
-      
-    </main>
+    <section id="contactus" class="contactus">
+  <div class="container">
+    <h2 class="contactus-title">Contact Us</h2>
+    <div class="contactus-container">
+      <div class="contactus-form">
+        <form>
+          <p class="contactus-text">
+            Please use the form below to contact us. Enter your name, email,
+            phone, and message and we'll get back to you shortly.
+          </p>
+          <div class="form">
+            <input
+              type="text"
+              id="user-name"
+              name="user-name"
+              class="form-content-input"
+              placeholder="Name"
+              required
+            />
+          </div>
+          <div class="form">
+            <input
+              type="email"
+              id="user-email"
+              name="user-email"
+              class="form-content-input"
+              placeholder="Email"
+              required
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            />
+          </div>
+          <div class="form">
+            <input
+              type="tel"
+              id="user-tel"
+              name="user-tel"
+              class="form-content-input"
+              placeholder="+380"
+              required
+              pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+              (+380-XX-XXX-XX-XX)
+            />
+          </div>
+          <div class="form">
+            <textarea
+              id="user-comment"
+              name="user-comment"
+              class="form-comment"
+              placeholder="Comment"
+            ></textarea>
+          </div>
+          <button class="form-btn-submit" type="submit">Send</button>
+        </form>
+      </div>
+      <div class="contactus-content">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="/CodeAlchemy/assets/contact_us-C13QfUK-.webp 1x, /CodeAlchemy/assets/contact_us_2x-PwBfvd5I.webp 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/CodeAlchemy/assets/contact_us_tablet-DHACoJ7f.webp 1x, /CodeAlchemy/assets/contact_us_tablet_2x-B2w-0laE.webp 2x"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/CodeAlchemy/assets/contact_us_mobile--Rqwc9KA.webp 1x, /CodeAlchemy/assets/contact_us_mobile_2x-CntOmXU0.webp 2x"
+          />
+          <img
+            class="contactus-img"
+            src="/CodeAlchemy/assets/contact_us-C13QfUK-.webp"
+            alt=""
+            width="335px"
+            height="512px"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <footer class="footer">
+  </main>
+
+  <footer class="footer">
   <div class="container"></div>
 </footer>
 
 
-  </body>
+</body>
+
 </html>
