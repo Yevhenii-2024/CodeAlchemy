@@ -3,13 +3,13 @@
 }
 
 .about-us-section {
+    padding: 50px 65px;
+
     display: flex;
     justify-content: center;
     gap: 40px;
 
     color: var(--main);
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 .about-us-container {
@@ -82,11 +82,11 @@
     background-position: center;
 }
 
-@media screen and (max-width: 875px) {
+/* TODO: 768 -> 1013 */
+@media screen and (max-width: 1013px) {
     .about-us-section {
+        padding: 40px 32px;
         flex-direction: column;
-        padding-top: 40px;
-        padding-bottom: 40px;
     }
 
     .about-us-container {
@@ -98,10 +98,10 @@
     }
 }
 
-@media screen and (max-width: 465px) {
+/* TODO: 375 -> 520 */
+@media screen and (max-width: 520px) {
     .about-us-section {
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding: 30px 20px;
     }
 
     .about-us-container {
