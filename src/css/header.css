@@ -104,21 +104,18 @@
 }
 .mob-active::after {
   content: '';
-  position: absolute;
-  left: calc(50% - 4px);
-  bottom: -1px;
+  padding: 1px 0;
   border-radius: 50%;
   width: 8px;
   height: 8px;
   background-color: #3350e9;
   display: block;
-  margin: 0 auto;
+  margin: 2px auto 0;
 }
 .mob-nav-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
-  padding-bottom: 10px;
   display: block;
 }
 .mob-social-list {
@@ -213,7 +210,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    /* padding: 20px; */
+    padding: 26px 65px;
   }
   .mob_menu_btn {
     display: none;
