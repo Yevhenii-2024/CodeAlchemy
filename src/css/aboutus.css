@@ -8,6 +8,8 @@
     gap: 40px;
 
     color: var(--main);
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .about-us-container {
@@ -83,6 +85,8 @@
 @media screen and (max-width: 875px) {
     .about-us-section {
         flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     .about-us-container {
@@ -95,6 +99,11 @@
 }
 
 @media screen and (max-width: 465px) {
+    .about-us-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
     .about-us-container {
         height: 100%;
         border-radius: 30px;
