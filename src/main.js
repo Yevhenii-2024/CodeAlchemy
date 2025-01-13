@@ -11,3 +11,5 @@ document
     const menu = document.querySelector('#mobile-menu');
     menu.classList.remove('is-open');
   });
+
+const number = 12;
