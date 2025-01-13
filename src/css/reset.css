@@ -31,7 +31,7 @@ img {
 }
 body {
   font-family: 'Gilroy', sans-serif;
-  color: #fbfbfb;
+  color: #0c0c0c;
   background-color: #fbfbfb;
 }
 
@@ -64,9 +64,9 @@ body {
   }
 }
 /* Styles for Desktop devices */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .container {
-    max-width: 1200px;
+    max-width: 1280px;
     padding: 0 65px;
   }
 }
