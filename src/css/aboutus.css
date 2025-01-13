@@ -3,7 +3,7 @@
 }
 
 .about-us-section {
-    padding: 50px 65px;
+    padding: 0px 65px 100px;
 
     display: flex;
     justify-content: center;
@@ -85,7 +85,7 @@
 /* TODO: 768 -> 1013 */
 @media screen and (max-width: 1013px) {
     .about-us-section {
-        padding: 40px 32px;
+        padding: 0px 32px 80px;
         flex-direction: column;
     }
 
@@ -101,7 +101,7 @@
 /* TODO: 375 -> 520 */
 @media screen and (max-width: 520px) {
     .about-us-section {
-        padding: 30px 20px;
+        padding: 0px 20px 60px;
     }
 
     .about-us-container {
