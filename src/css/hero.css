@@ -3,7 +3,6 @@
 .hero {
   display: flex;
   padding: 60px 0;
-  min-width: 320px;
   align-items: center;
 }
 
@@ -13,7 +12,7 @@
   justify-content: flex-start;
   flex-direction: column;
   gap: 20px;
-  max-width: 335px;
+  width: 335px;
 }
 
 .hero-title {
@@ -41,7 +40,7 @@
   align-items: flex-end;
   justify-content: flex-start;
   flex-direction: row;
-  gap: 155px;
+  justify-content: space-between;
   padding: 28px 0;
 }
 
@@ -92,10 +91,7 @@
 /* Styles for Tablet devices */
 @media screen and (min-width: 768px) {
   .hero {
-    display: flex;
     padding: 80px 0;
-    min-width: 768px;
-    align-items: center;
   }
 
   .hero-block {
@@ -106,12 +102,12 @@
   }
 
   .hero-info {
-    max-width: 557px;
+    width: 557px;
   }
 
   .hero-title {
     font-size: 70px;
-    line-height: 0.86;
+    line-height: 0.85;
   }
   .hero-text {
     font-size: 16px;
@@ -121,12 +117,12 @@
 
   .hero-section {
     flex-direction: column;
-    gap: 189px;
+    justify-content: space-between;
     padding: 0;
   }
 
   .hero-section-list {
-    padding: 0;
+    padding: 1 0;
     width: 136px;
   }
 
@@ -137,7 +133,7 @@
 
   .hero-section-item:nth-child(3) {
     z-index: 3;
-    left: 82px;
+    left: 80px;
   }
 
   .hero-scroll-link {
@@ -150,15 +146,14 @@
 @media screen and (min-width: 1200px) {
   .hero {
     padding-bottom: 100px;
-    min-width: 1200px;
   }
 
   .hero-block {
-    gap: 407px;
+    justify-content: space-between;
   }
 
   .hero-info {
-    max-width: 597px;
+    width: 597px;
   }
 
   .hero-title {
@@ -166,14 +161,9 @@
     line-height: 0.88;
   }
 
-  .hero-section {
-    flex-direction: column;
-    gap: 180px;
-  }
-
   .hero-section-list {
-    padding: 0;
-    width: 136px;
+    width: 146px;
+    padding: 1 0;
   }
 
   .hero-section-item:nth-child(2) {
@@ -183,6 +173,6 @@
 
   .hero-section-item:nth-child(3) {
     z-index: 3;
-    left: 88px;
+    left: 86px;
   }
 }
