@@ -70,6 +70,12 @@
   justify-content: center;
 }
 
+.advertisement-a:hover,
+.advertisement-a:focus {
+  background-color: #fbfbfb;
+  color: #0c0c0c;
+}
+
 /*TABLET*/
 
 @media screen and (min-width: 768px) {
