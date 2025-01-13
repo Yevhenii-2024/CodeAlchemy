@@ -108,6 +108,7 @@
   .hero-title {
     font-size: 70px;
     line-height: 0.85;
+    letter-spacing: -0.04em;
   }
   .hero-text {
     font-size: 16px;
@@ -159,6 +160,7 @@
   .hero-title {
     font-size: 72px;
     line-height: 0.88;
+    letter-spacing: -0.02em;
   }
 
   .hero-section-list {
