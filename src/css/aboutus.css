@@ -131,7 +131,7 @@
 
 @media screen and (max-width: 374px) {
     .about-us-container {
-        width: 280px;
+        width: 100%;
     }
 }
 
