@@ -75,6 +75,7 @@
 }
 
 .form-btn-submit {
+  outline: none;
   background-color: #3350e9;
   border-radius: 16px;
   padding: 12px 50px;
@@ -92,7 +93,9 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-btn-submit:active {
+.form-btn-submit:active,
+.form-btn-submit:hover,
+.form-btn-submit:focus {
   background-color: #1f3cd4;
 }
 
