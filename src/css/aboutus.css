@@ -82,15 +82,15 @@
     background-position: center;
 }
 
-/* TODO: 768 -> 1013 */
-@media screen and (max-width: 1013px) {
+@media screen and (max-width: 1280px) {
     .about-us-section {
         padding: 0px 32px 80px;
         flex-direction: column;
+        align-items: center;
     }
 
     .about-us-container {
-        width: 100%;
+        width: 704px;
     }
 
     .about-us-image-container {
@@ -98,14 +98,14 @@
     }
 }
 
-/* TODO: 375 -> 520 */
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 768px) {
     .about-us-section {
         padding: 0px 20px 60px;
     }
 
     .about-us-container {
         height: 100%;
+        width: 335px;
         border-radius: 30px;
     }
 
