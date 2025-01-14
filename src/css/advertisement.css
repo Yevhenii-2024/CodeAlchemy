@@ -1,6 +1,8 @@
 /*MOBIL*/
 
-
+.advertisement-section .container {
+  padding: 0 28px;
+}
 
 .advertisement-section {
   padding-bottom: 100px;
@@ -100,9 +102,12 @@
     }
   }
 
+  .advertisement-section .container {
+    padding: 0 64px;
+  }
+
   .advertisement-div-p {
     padding-top: 80px;
-    padding-left: 15px;
     width: 576px;
   }
 
@@ -113,7 +118,6 @@
 
   .advertisement-div-a {
     padding-bottom: 80px;
-    padding-left: 15px;
   }
 }
 
@@ -127,7 +131,7 @@
     background-repeat: no-repeat;
     width: 1150px;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
   }
 
   @media (min-resolution: 192dpi) {
@@ -150,7 +154,6 @@
   .advertisement-div-a {
     padding-left: 0px;
     padding-bottom: 170px;
-    padding-top: 83px;
-    padding-right: 15px;
+    padding-top: 80px;
   }
 }
