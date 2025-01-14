@@ -1,0 +1,143 @@
+:root {
+	--main: #0C0C0C;
+}
+
+.about-us-section {
+    padding: 0px 65px 100px;
+
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    color: var(--main);
+}
+
+.about-us-container {
+    box-sizing: border-box;
+    height: 532px;
+    border-radius: 50px;
+}
+
+.about-us-content-container {
+    padding: 60px;
+    width: 580px;
+    background-color: #F3F3F3;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-us-title {
+    font-weight: 600;
+    font-size: 48px;
+    width: 100%;
+
+    line-height: 92%;
+    letter-spacing: -0.02em;
+}
+
+.about-us-description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    font-weight: 500;
+    font-size: 16px;
+
+    line-height: 125%;
+    letter-spacing: -0.02em;
+}
+
+.about-us-catalog-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 48px;
+    border-radius: 16px;
+    border: none;
+    background-color: #3350E9;
+    
+    font-weight: 500;
+    font-size: 14px;
+    
+    line-height: 129%;
+    color: #FBFBFB;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-us-catalog-button:hover,
+.about-us-catalog-button:focus {
+    background-color: #1F3CD4;
+}
+
+.about-us-image-container {
+    width: 530px;
+    min-height: 446px;
+    background-image: url('../images/about_us/about_us_2x.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+/* TODO: 768 -> 1013 */
+@media screen and (max-width: 1013px) {
+    .about-us-section {
+        padding: 0px 32px 80px;
+        flex-direction: column;
+    }
+
+    .about-us-container {
+        width: 100%;
+    }
+
+    .about-us-image-container {
+        background-image: url('../images/about_us/about_us_tablet_2x.webp');
+    }
+}
+
+/* TODO: 375 -> 520 */
+@media screen and (max-width: 520px) {
+    .about-us-section {
+        padding: 0px 20px 60px;
+    }
+
+    .about-us-container {
+        height: 100%;
+        border-radius: 30px;
+    }
+
+    .about-us-content-container {
+        padding: 20px;
+        gap: 35px;
+    }
+
+    .about-us-title {
+        font-size: 32px;
+        width: 100%;
+        line-height: 100%;
+    }
+
+    .about-us-description {
+        font-size: 14px;
+    }
+
+    .about-us-image-container {
+        background-image: url('../images/about_us/about_us_mobile_2x.webp');
+    }
+}
+
+@media screen and (max-height: 465px) {
+    .about-us-container {
+        max-height: 100vh;
+        min-height: 100vh;
+    }
+
+    .about-us-content-container {
+        padding: 20px;
+        gap: 35px;
+    }
+}
+
