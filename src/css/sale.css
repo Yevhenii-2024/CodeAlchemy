@@ -1,5 +1,5 @@
 .sale {
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 .sale-title-section {
   font-weight: 600;
@@ -106,7 +106,7 @@
 }
 @media screen and (min-width: 768px) {
   .sale {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
   }
   .sale-title-section {
     font-size: 48px;
@@ -160,7 +160,7 @@
 }
 @media screen and (min-width: 1280px) {
   .sale {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
   .sale-box {
     margin-bottom: 0;
