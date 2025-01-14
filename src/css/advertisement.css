@@ -5,7 +5,7 @@
 }
 
 .advertisement-div {
-  background-image: url(../images/advertisement/advertisement_mobile.webp);
+  background-image: url(/images/advertisement/advertisement_mobile.webp);
   background-size: 335px 363px;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@
 
 @media (min-resolution: 192dpi) {
   .advertisement-div {
-    background-image: url(../images/advertisement/advertisement_mobile_2x.webp);
+    background-image: url(/images/advertisement/advertisement_mobile_2x.webp);
   }
 }
 
@@ -85,7 +85,7 @@
 
 @media screen and (min-width: 768px) {
   .advertisement-div {
-    background-image: url(../images/advertisement/advertisement_tablet.webp);
+    background-image: url(/images/advertisement/advertisement_tablet.webp);
     background-size: 704px 425px;
     width: 704px;
     height: 425px;
@@ -93,7 +93,7 @@
 
   @media (min-resolution: 192dpi) {
     .advertisement-div {
-      background-image: url(../images/advertisement/advertisement_tablet_2x.webp);
+      background-image: url(/images/advertisement/advertisement_tablet_2x.webp);
     }
   }
 
@@ -119,7 +119,7 @@
 
 @media screen and (min-width: 1280px) {
   .advertisement-div {
-    background-image: url(../images/advertisement/advertisement.webp);
+    background-image: url(/images/advertisement/advertisement.webp);
     background-size: 1150px 298px;
     width: 1150px;
     height: 298px;
@@ -129,7 +129,7 @@
 
   @media (min-resolution: 192dpi) {
     .advertisement-div {
-      background-image: url(../images/advertisement/advertisement_2x.webp);
+      background-image: url(/images/advertisement/advertisement_2x.webp);
     }
   }
 
