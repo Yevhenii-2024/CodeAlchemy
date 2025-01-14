@@ -16,7 +16,6 @@
   justify-content: flex-start;
   flex-direction: column;
   gap: 20px;
-  /* width: 335px; */
 }
 
 .hero-title {
@@ -148,7 +147,7 @@
 }
 
 /* Styles for Desktop devices */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .hero {
     padding-bottom: 100px;
   }
