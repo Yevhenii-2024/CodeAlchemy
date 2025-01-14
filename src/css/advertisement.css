@@ -8,6 +8,7 @@
   background-image: url(/images/advertisement/advertisement_mobile.webp);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -87,6 +88,7 @@
     background-image: url(/images/advertisement/advertisement_tablet.webp);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     width: 704px;
   }
 
@@ -120,6 +122,7 @@
     background-image: url(/images/advertisement/advertisement.webp);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     width: 1150px;
     flex-direction: row;
     align-items: baseline;
