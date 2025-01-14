@@ -5,7 +5,19 @@
 }
 
 .advertisement-section {
-  padding-bottom: 100px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .advertisement-section {
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advertisement-section {
+    padding-bottom: 100px;
+  }
 }
 
 .advertisement-div {
