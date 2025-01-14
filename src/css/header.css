@@ -142,6 +142,7 @@ padding: 8px;
     height: 18px;
     display: block;
     fill: #f3f3f3;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mob-soc-link:hover .soc-icon {
   fill: #fbfbfb;
@@ -279,6 +280,7 @@ padding: 8px;
         height: 20px;
         display: block;
         fill: #0c0c0c;
+        transition: fill 250ms cubic-bezier(0.4,0,0.2,1);
     }
     .head-soc-link:hover {
         border: 1px solid rgba(51, 80, 233, 0.1);
