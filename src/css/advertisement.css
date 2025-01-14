@@ -6,13 +6,13 @@
 
 .advertisement-div {
   background-image: url(/images/advertisement/advertisement_mobile.webp);
-  background-size: 335px 363px;
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 30px;
   width: 335px;
-  height: 363px;
   background-color: #0c0c0c;
 }
 
@@ -38,7 +38,7 @@
 .advertisement-div-p {
   display: flex;
   padding-top: 60px;
-  height: 162px;
+  padding-bottom: 28px;
   width: 279px;
 }
 
@@ -56,7 +56,6 @@
 
 .advertisement-div-a {
   padding-bottom: 60px;
-  padding-left: 8px;
 }
 
 .advertisement-a {
@@ -86,9 +85,9 @@
 @media screen and (min-width: 768px) {
   .advertisement-div {
     background-image: url(/images/advertisement/advertisement_tablet.webp);
-    background-size: 704px 425px;
+    background-size: cover;
+    background-position: center;
     width: 704px;
-    height: 425px;
   }
 
   @media (min-resolution: 192dpi) {
@@ -100,7 +99,6 @@
   .advertisement-div-p {
     padding-top: 80px;
     padding-left: 15px;
-    height: 185px;
     width: 576px;
   }
 
@@ -120,9 +118,9 @@
 @media screen and (min-width: 1280px) {
   .advertisement-div {
     background-image: url(/images/advertisement/advertisement.webp);
-    background-size: 1150px 298px;
+    background-size: cover;
+    background-position: center;
     width: 1150px;
-    height: 298px;
     flex-direction: row;
     align-items: baseline;
   }
@@ -135,14 +133,15 @@
 
   .advertisement-div-p {
     width: 690px;
-    height: 132px;
     padding-left: 0;
+    padding-bottom: 83px;
+    padding-top: 83px;
   }
 
   .advertisement-div-a {
     padding-left: 0px;
     padding-bottom: 170px;
-    padding-top: 80px;
+    padding-top: 83px;
     padding-right: 15px;
   }
 }
