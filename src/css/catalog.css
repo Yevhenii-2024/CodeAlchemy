@@ -25,6 +25,7 @@
   letter-spacing: -0.02em;
   margin-bottom: 24px;
 }
+
 @media only screen and (min-width: 768px) {
   .catalog-title {
     font-weight: 600;
@@ -118,14 +119,12 @@ ul.catalog-list li:nth-child(n + 5) {
   overflow: hidden;
 }
 
-.catalog-container {
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
-}
-
 .catalog-title-text {
   font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 8px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: -0.02em;
