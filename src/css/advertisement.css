@@ -35,15 +35,19 @@
   overflow: hidden;
 }
 
+.advertisement-div-p {
+  display: flex;
+  padding-top: 60px;
+  height: 162px;
+  width: 279px;
+}
+
 .advertisement-p {
   font-weight: 600;
   font-size: 32px;
   line-height: 1;
   letter-spacing: -0.02em;
   color: #fbfbfb;
-  padding: 60px 8px 28px 8px;
-  height: 162px;
-  width: 279px;
 }
 
 .advertisement-span {
@@ -93,17 +97,21 @@
     }
   }
 
-  .advertisement-p {
-    font-size: 48px;
-    line-height: 0.9;
-    padding: 80px 32px 32px 32px;
+  .advertisement-div-p {
+    padding-top: 80px;
+    padding-left: 15px;
     height: 185px;
     width: 576px;
   }
 
+  .advertisement-p {
+    font-size: 48px;
+    line-height: 0.9;
+  }
+
   .advertisement-div-a {
     padding-bottom: 80px;
-    padding-left: 32px;
+    padding-left: 15px;
   }
 }
 
@@ -125,10 +133,10 @@
     }
   }
 
-  .advertisement-p {
+  .advertisement-div-p {
     width: 690px;
     height: 132px;
-    padding: 83px 140px 83px 15px;
+    padding-left: 0;
   }
 
   .advertisement-div-a {
