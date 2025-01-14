@@ -1,5 +1,7 @@
 /*MOBIL*/
 
+
+
 .advertisement-section {
   padding-bottom: 100px;
 }
@@ -132,6 +134,10 @@
     .advertisement-div {
       background-image: url(/images/advertisement/advertisement_2x.webp);
     }
+  }
+
+  .advertisement-section .container {
+    padding: 0 80px;
   }
 
   .advertisement-div-p {
